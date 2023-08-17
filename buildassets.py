@@ -59,7 +59,8 @@ copyfile(en_path + "/memoria/web_ef_memoria.ExportJson", jp_path + "/memoria/web
 print("Updating AndroidManifest.xml")
 path = Path("build/app/AndroidManifest.xml")
 text = path.read_text()
-text = text.replace("com.aniplex.magireco", "io.kamihama.magiatranslate")
+text = text.replace("com.aniplex.magireco", "com.proyectomagirecoesp.mikazuki")
+text = text.replace("io.kamihama.magiatranslate", "com.proyectomagirecoesp.mikazuki")
 path.write_text(text)
 
 rmdir("build/assets")
