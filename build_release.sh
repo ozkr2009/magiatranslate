@@ -101,6 +101,8 @@ _create() {
 	# cp "${BASEDIR}/patches/images/story_ui_sprites00_patch.png" "${BASEDIR}/build/app/assets/package/story/story_ui_sprites00.png"
 
 	cp "${BASEDIR}/patches/koruri-semibold.ttf" "${BASEDIR}/build/app/assets/fonts/koruri-semibold.ttf"
+	cp "${BASEDIR}/patches/mbm_20160902.ttf" "${BASEDIR}/build/app/assets/fonts/mbm_20160902.ttf"
+	cp "${BASEDIR}/patches/MTF4a5kp.ttf" "${BASEDIR}/build/app/assets/fonts/MTF4a5kp.ttf"
 
 	echo "Updating sprites and AndroidManifest.xml..."
 	${PYTHON} "${BASEDIR}/buildassets.py"
