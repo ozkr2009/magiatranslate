@@ -47,13 +47,13 @@ RESULT="${BASEDIR}/build/io.kamihama.magiatranslate.${VERSION}.apk"
 
 # build main APK which contains audiofix
 MT_AUDIOFIX_3_0_1=Y "${BASEDIR}/build_release.sh" "${SRCAPK}" "${VERSION}" "${NDK}"
-MAIN_APK="MagiaTranslate_${VERSION}.apk"
+MAIN_APK="MagirecoES_${VERSION}.apk"
 mv "${RESULT}" "${BASEDIR}/${MAIN_APK}"
 echo "MAIN_APK=${MAIN_APK}" >> "$GITHUB_ENV"
 
 # build failsafe APK which does not contain audiofix
 MT_AUDIOFIX_3_0_1=N "${BASEDIR}/build_release.sh" "${SRCAPK}" "${VERSION}" "${NDK}"
-FAILSAFE_APK="MagiaTranslate_${VERSION}_failsafe.apk"
+FAILSAFE_APK="MagirecoES_${VERSION}_failsafe.apk"
 mv "${RESULT}" "${BASEDIR}/${FAILSAFE_APK}"
 echo "FAILSAFE_APK=${FAILSAFE_APK}" >> "$GITHUB_ENV"
 
