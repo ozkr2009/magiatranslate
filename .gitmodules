@@ -16,9 +16,9 @@
 	branch = develop
 [submodule "patches/images"]
 	path = patches/images
-	url = https://git.rayshift.io/kamihama/magia-client-image-patches
+	url = https://gitlab.com/villa-mikazuki/magia-client-image-patches.git
         branch = master
 [submodule "patches/magia-en-apk-assets"]
 	path = patches/magia-en-apk-assets
-	url = https://git.rayshift.io/kamihama/magia-en-apk-assets
+	url = https://gitlab.com/villa-mikazuki/apk-assets.git
         branch = master
