@@ -11,9 +11,12 @@ verify_apk() {
 
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
 
-URL_PREFIX="https://jp.rika.ren/apk/Origin/com.aniplex.magireco"
-ARMV8_URL="${URL_PREFIX}.arm8.apk"
-ARMV7_URL="${URL_PREFIX}.arm7.apk"
+#URL_PREFIX="https://jp.rika.ren/apk/Origin/com.aniplex.magireco"
+#ARMV8_URL="${URL_PREFIX}.arm8.apk"
+#ARMV7_URL="${URL_PREFIX}.arm7.apk"
+
+ARMV8_URL = "https://github.com/rayshift/magiatranslate/releases/download/v3.1.8-prerelease/MagiaTranslate_v3.1.8.apk"
+ARMV7_URL = "https://github.com/rayshift/magiatranslate/releases/download/v3.1.8-prerelease/MagiaTranslate_v3.1.8.apk"
 
 . ci_versions/src_apk.sh
 
