@@ -24,7 +24,9 @@ rm -fr apk armv7apk
 mkdir -p apk armv7apk
 
 curl -A "${UA}" -o out.apk -L "${ARMV8_URL}"
-#verify_apk out.apk "${SRCAPK_CERT_SHA256}" && mv out.apk "./apk/src_${SRCAPK_VER}.apk"
+#verify_apk out.apk "${SRCAPK_CERT_SHA256}" && 
+mv out.apk "./apk/src_${SRCAPK_VER}.apk"
 
 curl -A "${UA}" -o out.apk -L "${ARMV7_URL}"
-#verify_apk out.apk "${SRCAPK_CERT_SHA256}" && mv out.apk "./armv7apk/armv7src_${SRCAPK_VER}.apk"
+#verify_apk out.apk "${SRCAPK_CERT_SHA256}" && 
+mv out.apk "./armv7apk/armv7src_${SRCAPK_VER}.apk"
