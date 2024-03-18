@@ -59,7 +59,6 @@ jobs:
           armv7apk
         key: ${{ runner.os }}-cached-src-apk-${{ hashFiles('ci_versions/src_apk.sh') }}
     - name: Download source APK
-      if: steps.restore-cached-src-apk.outputs.cache-hit != 'true'
       run: ./ci_download_src_apk.sh
     - name: Save source APK to cache
       if: steps.restore-cached-src-apk.outputs.cache-hit != 'true'
